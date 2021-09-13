@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+    font-family: 'Inter',
+        sans-serif;
+    font-style: normal;
+}
+
+.main {
+    margin: 3.33rem 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3.33rem;
+    flex: 0 0 1;
+}
+
+.main__column {
+    width: 30.66rem;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 5rem;
+    color: #FFFFFF;
+}
+
+.info {
+    margin-top: 4.33rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info-item {
+    margin-bottom: 2rem;
+    width: 13.66rem;
+}
+
+.info-item .info-item__image {
+    width: 2rem;
+    height: 2rem;
+}
+
+.info-item .info-item__image img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.info-item .info-item__title {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.66rem;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.66rem;
+    color: #FFFFFF;
+}
+
+.info-item__description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.title {
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.66rem;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+.tech__description {
+    margin-top: 1.66rem;
+    position: relative;
+}
+
+.tech__description:first-of-type {
+    margin-top: 1rem;
+}
+
+.tech__description::before {
+    content: '';
+    position: absolute;
+    width: 30.67rem;
+    height: 0.46rem;
+    left: 0;
+    top: 1.73rem;
+    background: #FFFFFF;
+    opacity: 0.3;
+    border-radius: 0.66rem;
+}
+
+.tech__description::after {
+    content: '';
+    position: absolute;
+    height: 0.46rem;
+    left: 0;
+    top: 1.73rem;
+    background: #FFFFFF;
+    border-radius: 0.66rem;
+}
+
+.tech__description_internet::after {
+    width: 15.33rem;
+}
+
+.tech__description_social::after {
+    width: 6.66rem;
+}
+
+.tech__description_shopping::after {
+    width: 15.33rem;
+}
+
+.info-article {
+    margin-top: 3.33rem;
+}
+
+.info-article:first-of-type {
+    margin-top: 0;
+}
+
+.info-article__description {
+    margin-top: 1rem;
+}
+
+.info-article__list {
+    margin-left: 1rem;
+}
+
+.main-image {
+    position: relative;
+    height: 50rem;
+    background: url('../images/avatar.jpg') center center/cover no-repeat;
+}
+
+.main-image__quote {
+    position: absolute;
+    bottom: 5.33rem;
+    margin: 0 3.33rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.33rem;
+    color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 12px;
+    }
+
+    .main {
+        margin: 2rem 1rem;
+        align-items: flex-start;
+        gap: 3.33rem;
+        flex: 0 0 1;
+    }
+
+    .main__column {
+        width: 25rem;
+    }
+
+    .name {
+        font-size: 4rem;
+        line-height: 4rem;
+        color: #FFFFFF;
+    }
+
+    .info-item {
+        width: 12.5rem;
+    }
+
+    .tech__description::before {
+        width: 25rem;
+    }
+
+    .tech__description_internet::after {
+        width: 13.00rem;
+    }
+
+    .tech__description_social::after {
+        width: 5.00rem;
+    }
+
+    .tech__description_shopping::after {
+        width: 13.00rem;
+    }
+
+    .main-image {
+        height: 45rem;
+    }
+
+    .main-image__quote {
+        margin: 0 1.5rem;
+        bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 12px;
+    }
+
+    .main__column {
+        width: 20rem;
+    }
+
+    .name {
+        font-size: 3rem;
+        line-height: 3rem;
+        color: #FFFFFF;
+    }
+
+    .info-item {
+        width: 10rem;
+    }
+
+    .tech__description::before {
+        width: 20rem;
+    }
+
+    .tech__description_internet::after {
+        width: 10.00rem;
+    }
+
+    .tech__description_social::after {
+        width: 4.00rem;
+    }
+
+    .tech__description_shopping::after {
+        width: 10.00rem;
+    }
+
+    .main-image {
+        height: 40rem;
+    }
+
+    .main-image__quote {
+        margin: 0 1.00rem;
+        bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .main__column {
+        width: auto;
+    }
+
+    .name {
+        text-align: center;
+        font-size: 3rem;
+        line-height: 3rem;
+        color: #FFFFFF;
+    }
+
+    .info {
+        justify-content: center;
+    }
+
+    .info-item {
+        width: 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .main-image {
+        position: relative;
+        background: url('../images/avatar.jpg') center center/cover no-repeat;
+        height: 35rem;
+        width: 20rem
+    }
+
+    .main-image__quote {
+        margin: 0 1.00rem;
+        bottom: 3rem;
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+}

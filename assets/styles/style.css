@@ -143,20 +143,17 @@ img {
     margin: 0 5%;
     font-weight: 600;
     font-size: 2rem;
-    line-height: 2.33rem;
+    line-height: 2.7rem;
     color: #FFFFFF;
     max-height: 30%;
-    /* overflow-x: hidden;
-    overflow-y: hidden; */
+    /*Кастомизация скролла для firefox*/
+    scrollbar-color: #ffffff #cfcecc00;
+    scrollbar-width: thin;
 }
 
-/* .main-image__quote:hover {
-    overflow-y: scroll;
-} */
-
+/*Кастомизация скролла для webkit-браузеров*/
 .scroll-block {
-    height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .scroll-block::-webkit-scrollbar-track {
@@ -315,8 +312,7 @@ img {
     .main-image__quote {
         bottom: 5%;
         margin: 0 10%;
-        font-size: 1.5rem;
-        line-height: 1.7rem;
+        font-size: 2rem;
+        line-height: 2.3rem;
     }
-
 }

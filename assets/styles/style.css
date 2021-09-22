@@ -18,7 +18,7 @@ body {
 }
 
 .main {
-    margin: 0 5vw;
+    margin: 20px 100px;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -39,14 +39,14 @@ body {
 }
 
 .info {
-    margin-top: 4vh;
+    margin-top: 65px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .info-item {
-    margin-bottom: 2vh;
+    margin-bottom: 30px;
     width: 50%;
 }
 
@@ -83,7 +83,6 @@ img {
 }
 
 .title {
-    margin-top: 1vh;
     font-weight: 600;
     font-size: 2rem;
     line-height: 1.66rem;
@@ -91,12 +90,16 @@ img {
     opacity: 0.9;
 }
 
+.title_tech {
+    margin-top: 15px;
+}
+
 .tech__description {
-    margin-top: 1.5vh;
+    margin-top: 17px;
 }
 
 .tech__description:first-of-type {
-    margin-top: 1vh;
+    margin-top: 15px;
 }
 
 .tech__bar {
@@ -114,7 +117,7 @@ img {
 }
 
 .info-article {
-    margin-top: 4vh;
+    margin-top: 50px;
 }
 
 .info-article:first-of-type {
@@ -122,36 +125,37 @@ img {
 }
 
 .info-article__description {
-    margin-top: 2vh;
+    margin-top: 15px;
 }
 
 .info-article__list {
-    margin-left: 1vw;
+    margin-left: 10px;
 }
 
 .main-image {
     position: relative;
-}
-
-.main-image img {
+    height: 750px;    
+    background: url('../images/avatar.jpg') center center/cover no-repeat;
     border-radius: 7px;
+    
 }
 
 .main-image__quote {
     position: absolute;
-    bottom: 10%;
-    margin: 0 5%;
+    bottom: 83px;
+    margin: 0 35px;
     font-weight: 600;
     font-size: 2rem;
     line-height: 2.7rem;
-    color: #FFFFFF;
-    max-height: 30%;
+    color: #FFFFFF;    
     /*Кастомизация скролла для firefox*/
-    scrollbar-color: #ffffff #cfcecc00;
+    /*scrollbar-color: #ffffff #cfcecc00;
     scrollbar-width: thin;
+    */
 }
 
 /*Кастомизация скролла для webkit-браузеров*/
+/*
 .scroll-block {
     overflow-y: auto;
 }
@@ -169,6 +173,7 @@ img {
     border-radius: 4px;
     background: #ffffff;
 }
+*/
 
 @media screen and (max-width: 1500px) {
     .name {
@@ -181,6 +186,19 @@ img {
 @media screen and (max-width: 1200px) {
     html {
         font-size: 12px;
+    }
+
+    .main {
+        margin: 20px 30px;
+    }
+
+    .main-image {
+        height: 600px;
+    }
+
+    .main-image__quote {
+        bottom: 20px;
+        margin: 0 15px;
     }
 
     .name {
@@ -201,10 +219,8 @@ img {
     }
 
     .main-image__quote {
-        bottom: 5%;
-        margin: 0 10%;
-        font-size: 1.5rem;
-        line-height: 1.7rem;
+        font-size: 1.8rem;
+        line-height: 2.0rem;
     }
 }
 
@@ -213,18 +229,19 @@ img {
         font-size: 10px;
     }
     .main {
-        margin: 5vh 3vw;
+        margin: 20px;
         align-items: flex-start;
     }
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (orientation: portrait) and (min-width: 576px) {
     html {
         font-size: 15px;
     }
 
     .main {
-        margin: 5vh 3vw;
+        margin: 20px;
+        height: 100%;
     }
 
     .main__column {
@@ -235,8 +252,12 @@ img {
         text-align: center;
     }
 
+    .title {
+        text-align: center;
+    }
+
     .info-item {
-        margin-bottom: 4vh;
+        margin-bottom: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -244,29 +265,21 @@ img {
     }
 
     .info-article__description {
-        margin-top: 3vh;
+        margin-top: 30px;
         text-align: justify;
-    }
-
-    .title {
-        text-align: center;
-    }
+    }    
 
     .info-article:first-of-type {
-        margin-top: 4vh;
-    }
-
-    .title_tech {
-        margin-top: 1vh;
-        text-align: center;
+        margin-top: 50px;
     }
 
     .info-article__list {
-        margin-left: 3vw;
+        margin-left: 10px;
     }
 
     .main-image {
-        margin-top: 7vh;
+        height: 700px;
+        margin-top: 50px;
     }
 
     .main-image__quote {
@@ -276,6 +289,15 @@ img {
 }
 
 @media screen and (max-width: 575px) {
+    html {
+        font-size: 15px;
+    }
+
+    .main {
+        margin: 20px;
+        height: 100%;
+    }
+
     .main__column {
         width: 100%;
     }
@@ -284,7 +306,12 @@ img {
         text-align: center;
     }
 
+    .title {
+        text-align: center;
+    }
+
     .info-item {
+        margin-bottom: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -292,27 +319,25 @@ img {
     }
 
     .info-article__description {
-        margin-top: 3vh;
+        margin-top: 30px;
         text-align: justify;
     }
 
-    .title {
-        margin-top: 7vh;
-        text-align: center;
-    }
-
-    .title_tech {
-        margin-top: 1vh;
+    .info-article:first-of-type {
+        margin-top: 50px;
     }
 
     .info-article__list {
-        margin-left: 3vw;
+        margin-left: 10px;
+    }
+
+    .main-image {
+        height: 500px;
+        margin-top: 50px;
     }
 
     .main-image__quote {
-        bottom: 5%;
-        margin: 0 10%;
-        font-size: 2rem;
-        line-height: 2.3rem;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
     }
 }
